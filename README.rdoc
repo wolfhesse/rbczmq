@@ -220,6 +220,7 @@ Building from source
     cd rbczmq
     git submodule init
     git submodule update
+    bundle install
     rake
 
 Running all tests
@@ -236,6 +237,13 @@ If you are installing the package on a new Mac ensure you have libtool and autoc
 You can get those with brew packaging system:
 
     brew install libtool autoconf automake
+    
+Ubuntu notes:
+
+If you are installing the package on a Ubuntu system ensure you have libtool installed. You will have to link the executable though.
+
+  sudo ln -s /usr/bin/libtoolize /usr/bin/libtool
+
 
 == LICENSE
 
